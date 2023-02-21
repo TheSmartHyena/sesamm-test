@@ -5,4 +5,4 @@
 - npm i 
 - npm start
 
-the applicatio will run of the default react app port: 3000.
+The application will run of the default react app port: 3000.
