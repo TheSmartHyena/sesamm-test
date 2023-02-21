@@ -5,7 +5,7 @@ export const WeatherDisplay = () => {
 
     return (
         <div>
-            Température actuelle en degrés celsius: {state.weather.main.temp}
+            Température actuelle en degrés Celsius: {state.weather.main.temp}
         </div>
     );
 }

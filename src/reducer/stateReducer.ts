@@ -51,6 +51,7 @@ export const reducer = (state : IInitialState = initialState, action: IReducerAc
     if (type === ReducerActionList.SET_CITY_LIST) {
         return {
             ...state,
+            error: null,
             cityList: payload,
             loadingCities: false,
           };
@@ -79,6 +80,7 @@ export const reducer = (state : IInitialState = initialState, action: IReducerAc
     if (type === ReducerActionList.SET_WEATHER) {
         return {
             ...state,
+            error: null,
             weather: payload,
             loadingCity: false
           };
@@ -88,6 +90,7 @@ export const reducer = (state : IInitialState = initialState, action: IReducerAc
         return {
             ...state,
             error: payload,
+            cityIndex: -1,
             loadingCity: false,
             loadingCities: false,
           };

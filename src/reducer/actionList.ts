@@ -5,5 +5,5 @@ export enum ReducerActionList {
     SET_CITY_LIST = 'SET_CITY_LIST',
     TRIGGER_SEARCH = 'TRIGGER_SEARCH',
     SET_WEATHER = 'SET_WEATHER',
-    SET_ERROR = 'SET_WEATHER',
+    SET_ERROR = 'SET_ERROR',
   }

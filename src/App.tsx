@@ -8,9 +8,10 @@ import { CityComponent } from './components/CityComponent';
 import { SearchButtonComponent } from './components/SearchButtonComponent';
 import { CityList } from './components/CityList';
 import { RequestComponent } from './components/RequestComponent';
+import { ErrorComponent } from './components/ErrorComponent';
 
 const Main = () => {
-  const [state] = useStore()
+  const [state] = useStore();
 
   return (
     <div className="App">
@@ -38,6 +39,12 @@ const Main = () => {
 
         {state.cityIndex > -1 &&
           <WeatherDisplay />
+        }
+
+        {!!state.error &&
+          <>
+            <ErrorComponent />
+          </>
         }
 
         <RequestComponent />

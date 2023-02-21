@@ -15,7 +15,7 @@ type GetCityResponse = {
   };
 
 export const RequestComponent = () => {
-    const [state, dispatch] = useStore()
+    const [state, dispatch] = useStore();
 
     useEffect(() => {
         if (state.city.length > 0 && state.token.length > 0) {

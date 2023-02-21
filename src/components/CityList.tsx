@@ -9,8 +9,6 @@ export const CityList = () => {
         dispatch({ type: ReducerActionList.SET_CITY_INDEX, payload: e.target.value });
     }
 
-    console.log('Poney A', state);
-
     return (
         <select value={state.cityIndex} onChange={handleCityIndexChange} disabled={state.token?.length === 0 || state.loadingCities || state.loadingCity}>
             <option value="-1">Choisir une ville</option>
